@@ -1,0 +1,49 @@
+ .card-body {
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+}
+
+@media screen and (min-width: 1608px){
+.help-center-panel {
+    width: 474px;
+}}
+
+h2.splash-title {
+    max-width: 265px;
+    width: 100%;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 52px;
+}
+
+.hide_notification{
+    -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        border-left:none!important;
+        position:relative
+
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        border-left:none!important;
+        position:relative
+    }
+}
